@@ -6,7 +6,7 @@
 using namespace std;
 
 random_device rd; //Needed better random number generation for really small probabilities
-mt19937 mt(rd()); //unfortunately that means they are not deterministic
+mt19937 mt(rd()); // unfortunately that means they are not deterministic
 uniform_real_distribution<double> dist(0.0, nextafter(1, DBL_MAX));
 const int L = 1000; // Lattice size is L*L
 const int N = 10000000; // Number of agents
